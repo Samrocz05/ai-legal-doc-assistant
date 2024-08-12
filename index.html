@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Legal Documentation Assistant</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/ai-legal-assistant-banner.jpg" alt="AI Legal Assistant Banner">
+        <nav>
+            <ul>
+                <li><a href="#drafting" data-section="drafting">Document Drafting</a></li>
+                <li><a href="#analysis" data-section="analysis">Document Analysis</a></li>
+                <li><a href="#research" data-section="research">Legal Research</a></li>
+                <li><a href="#dashboard" data-section="dashboard">User Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="drafting" class="hidden">
+        <h2>Interactive Document Drafting</h2>
+        <form id="draftForm">
+            <label for="docType">Document Type:</label>
+            <input type="text" id="docType" name="docType" required>
+            <label for="docDetails">Details:</label>
+            <textarea id="docDetails" name="docDetails" required></textarea>
+            <button type="submit">Generate Preview</button>
+        </form>
+        <div id="draftPreview"></div>
+        <img src="assets/document-analysis-icon.jpg" alt="Document Drafting Icon">
+    </section>
+
+    <section id="analysis" class="hidden">
+        <h2>Document Analysis</h2>
+        <form id="analyzeForm">
+            <label for="fileInput">Upload Document:</label>
+            <input type="file" id="fileInput" name="fileInput"required>
+            <button type="submit">Analyze Document</button>
+        </form>
+        <div id="analyzeResult"></div>
+        <img src="assets/document-analysis-icon.jpg" alt="Document Analysis Icon">
+    </section>
+
+    <section id="research" class="hidden">
+        <h2>Legal Research Integration</h2>
+        <form id="researchForm">
+            <label for="query">Search Query:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="researchResults"></div>
+        <img src="assets/legal-research-icon.jpg" alt="Legal Research Icon">
+    </section>
+
+    <section id="dashboard" class="hidden">
+        <h2>User Dashboard</h2>
+        <div id="dashboardUpdates"></div>
+        <img src="assets/dashboard-overview.jpg" alt="Dashboard Overview">
+    </section>
+
+    <footer>
+        <p>Created by <a href="mailto:dsam5238@gmail.com">Sam D</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sam-d-220501245/">Sam D</a></p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
